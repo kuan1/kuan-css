@@ -1,38 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title></title>
+    <style>
+      .test-container {
+        max-width: 90%;
+        width: 900px;
+        margin: 50px auto;
+      }
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title></title>
-  <style>
-    .test-container {
-      max-width: 90%;
-      width: 900px;
-      margin: 80px auto;
-    }
+      .test-container .title {
+        padding-bottom: 20px;
+      }
 
-    .test-container h2 {
-      line-height: 2;
-    }
-  </style>
-</head>
+      .test-container h1 {
+        line-height: 2;
+      }
+      .test-item {
+        padding: 10px 0;
+      }
+    </style>
+  </head>
 
-<body>
-  <div class="test-container">
-    <div>
-      <h1>kuan-css</h1>
-      <h2>css：重置样式、常用css、常用动画</h2>
+  <body>
+    <div class="test-container">
+      <div class="title">
+        <h1>kuan-css</h1>
+        <p>css：重置样式、常用css、常用动画</p>
+      </div>
+      <div class="test-item">
+        <input type="text" class="k-input" placeholder="input样式" />
+      </div>
+      <div class="test-item">
+        <button class="k-button animated fadeInDown">按钮</button>
+        <button class="k-button animated fadeInUp primary">按钮</button>
+        <button class="k-button animated pulse infinite danger">按钮</button>
+      </div>
     </div>
-    <div>
-      <input type="text" class="k-input" placeholder="input样式">
-    </div>
-    <button class="k-button animated fadeInDown">按钮</button>
-    <button class="k-button animated fadeInUp primary">按钮</button>
-    <button class="k-button animated pulse infinite danger">按钮</button>
-  </div>
-
-</body>
-
+  </body>
 </html>

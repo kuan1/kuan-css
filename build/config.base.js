@@ -1,5 +1,4 @@
 const fs = require('fs')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
 const WebpackBar = require('webpackbar')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
@@ -48,23 +47,18 @@ module.exports = {
   },
   plugins: [
     new WebpackBar(),
-    new HtmlWebpackPlugin({
-      template: options.html,
-      path: options.publicPath,
-      hash: true
-    }),
     new MiniCssExtractPlugin({
       filename: '[name].css'
     }),
     new CopyWebpackPlugin(
       fs.existsSync(options.staticPath)
         ? [
-          {
-            from: options.staticPath,
-            to: '',
-            ignore: ['.*']
-          }
-        ]
+            {
+              from: options.staticPath,
+              to: '',
+              ignore: ['.*']
+            }
+          ]
         : []
     )
   ],
