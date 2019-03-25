@@ -15,7 +15,9 @@
   "files": [
     "lib"
   ],
-  "keywords": [],
+  "keywords": [
+    "css"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
