@@ -103,3 +103,31 @@ a:focus {
 body {
   font-size: 14px;
 }
+button {
+  appearance: none;
+  border: none;
+  border: 1px solid #ddd;
+  color: inherit;
+  height: 40px;
+  outline: 0;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  padding: 0 10px;
+  font-size: 14px;
+  box-sizing: border-box;
+  &::after {
+    content: '';
+    opacity: 0;
+    display: block;
+    background: black;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+  }
+  &:active::after {
+    opacity: 0.2;
+  }
+}
