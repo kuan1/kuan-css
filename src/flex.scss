@@ -1,16 +1,16 @@
 // 常用flex
 .flex {
   display: flex;
-  .wrap {
+  &.wrap {
     flex-wrap: wrap;
   }
-  .middle {
+  &.middle {
     align-items: center;
   }
-  .column {
+  &.column {
     flex-direction: column;
   }
-  .between {
+  &.between {
     justify-content: space-between;
   }
 }
