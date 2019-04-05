@@ -3,7 +3,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const webpackMerge = require('webpack-merge')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 
-const { html: htmlPath } = require('./defaults')
+const options = require('./defaults')
+const { html: htmlPath } = options
 
 const config = require('./config.base')
 // const { resolve } = require('./utils')
@@ -18,7 +19,18 @@ module.exports = webpackMerge(config, {
     new HtmlWebpackPlugin({
       template: htmlPath,
       hash: true
-    })
+    }),
+    new CopyWebpackPlugin(
+      fs.existsSync(options.staticPath)
+        ? [
+            {
+              from: options.staticPath,
+              to: '',
+              ignore: ['.*']
+            }
+          ]
+        : []
+    )
   ],
   optimization: {
     minimizer: [

@@ -1,7 +1,6 @@
 const fs = require('fs')
 const WebpackBar = require('webpackbar')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 const loaders = require('./loaders')
 const options = require('./defaults')
@@ -49,18 +48,7 @@ module.exports = {
     new WebpackBar(),
     new MiniCssExtractPlugin({
       filename: '[name].css'
-    }),
-    new CopyWebpackPlugin(
-      fs.existsSync(options.staticPath)
-        ? [
-            {
-              from: options.staticPath,
-              to: '',
-              ignore: ['.*']
-            }
-          ]
-        : []
-    )
+    })
   ],
   resolve: {
     extensions: ['.js', '.scss'],

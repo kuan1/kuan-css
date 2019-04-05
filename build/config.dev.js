@@ -1,7 +1,9 @@
 const webpackMerge = require('webpack-merge')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 const base = require('./config.base')
-const { proxy, publicPath, html: htmlPath } = require('./defaults')
+const options = require('./defaults')
+const { proxy, publicPath, html: htmlPath } = options
 
 module.exports = webpackMerge(base, {
   mode: 'development',
@@ -27,6 +29,17 @@ module.exports = webpackMerge(base, {
       template: htmlPath,
       path: publicPath,
       hash: true
-    })
+    }),
+    new CopyWebpackPlugin(
+      fs.existsSync(options.staticPath)
+        ? [
+            {
+              from: options.staticPath,
+              to: '',
+              ignore: ['.*']
+            }
+          ]
+        : []
+    )
   ]
 })
