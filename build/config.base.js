@@ -1,4 +1,3 @@
-const fs = require('fs')
 const WebpackBar = require('webpackbar')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
