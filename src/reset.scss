@@ -3,8 +3,13 @@ button,
 input,
 select,
 textarea {
-  font: 14px/1 'Helvetica Neue', Helvetica, Arial, 'Microsoft Yahei',
+  font-family: 'Helvetica Neue', Helvetica, Arial, 'Microsoft Yahei',
     'Hiragino Sans GB', 'Heiti SC', 'WenQuanYi Micro Hei', sans-serif;
+}
+
+body {
+  font-size: 14px;
+  line-height: 1;
 }
 
 body,
@@ -100,9 +105,6 @@ a:focus {
   text-decoration: none;
 }
 
-body {
-  font-size: 14px;
-}
 button {
   appearance: none;
   border: none;

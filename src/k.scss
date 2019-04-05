@@ -1,7 +1,7 @@
 // input
 .k-input {
-  border: 1px solid #dedede;
-  border-radius: 5px;
+  border: 1px solid #eee;
+  border-radius: 2px;
   padding: 4px 5px;
   width: 100%;
   appearance: none;
@@ -17,7 +17,6 @@
   appearance: none;
   border-radius: 4px;
   border: none;
-  border: 1px solid #ddd;
   box-sizing: border-box;
   color: inherit;
   font-size: 18px;
@@ -27,6 +26,9 @@
   position: relative;
   text-align: center;
   padding: 0 10px;
+  margin: 5px;
+  border: 1px solid #eee;
+  cursor: pointer;
   &::after {
     content: '';
     opacity: 0;
@@ -42,10 +44,12 @@
     opacity: 0.2;
   }
   &.primary {
+    border: none;
     color: #fff;
     background-color: #26a2ff;
   }
   &.danger {
+    border: none;
     color: #fff;
     background-color: #ef4f4f;
   }
