@@ -1,6 +1,6 @@
 {
   "name": "kuan-css",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "重置样式，常用css，常用animate.css",
   "main": "lib/index.css",
   "scripts": {
