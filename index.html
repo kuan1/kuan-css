@@ -1,112 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title></title>
-    <style>
-      .test-container {
-        max-width: 90%;
-        width: 900px;
-        margin: 10px auto;
-      }
-      .test-container .title {
-        padding-bottom: 20px;
-        text-align: center;
-      }
-      .test-container h1,
-      .test-container h2 {
-        line-height: 2;
-      }
-      .test-container .test-item {
-        border-radius: 5px;
-        margin: 20px 0;
-        padding: 10px;
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.08);
-      }
-      .test-container .test-item:hover {
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      }
-      .test-container .ball {
-        height: 30px;
-        width: 30px;
-        background: #ccc;
-        border-radius: 50%;
-        margin: 20px;
-      }
-    </style>
-  </head>
 
-  <body>
-    <div class="test-container">
-      <div class="title">
-        <h1>kuan-css</h1>
-        <p>个人常用css</p>
-      </div>
-      <div class="test-item">
-        <h2>按钮</h2>
-        <button class="k-button">按钮</button>
-        <button class="k-button primary">按钮</button>
-        <button class="k-button danger">按钮</button>
-      </div>
-      <div class="test-item">
-        <h2>input</h2>
-        <input type="text" class="k-input" placeholder="请输入内容" />
-      </div>
-      <div class="test-item">
-        <h2>动画</h2>
-        <div class="flex wrap">
-          <div class="ball animated fadeInDown"></div>
-          <div class="ball animated fadeInUp"></div>
-          <div class="ball animated bounce"></div>
-          <div class="ball animated pulse infinite"></div>
-        </div>
-      </div>
-      <div class="test-item">
-        <h2>常用图标</h2>
-        <i class="iconfont icon-right"></i>
-        <i class="iconfont icon-back"></i>
-        <i class="iconfont icon-back_light"></i>
-        <i class="iconfont icon-add"></i>
-        <i class="iconfont icon-move"></i>
-        <i class="iconfont icon-filter"></i>
-        <i class="iconfont icon-double-arrow-right"></i>
-        <i class="iconfont icon-double-arrow-left"></i>
-        <i class="iconfont icon-appreciate"></i>
-        <i class="iconfont icon-appreciatefill"></i>
-        <i class="iconfont icon-check"></i>
-        <i class="iconfont icon-close"></i>
-        <i class="iconfont icon-edit"></i>
-        <i class="iconfont icon-emoji"></i>
-        <i class="iconfont icon-favorfill"></i>
-        <i class="iconfont icon-favor"></i>
-        <i class="iconfont icon-locationfill"></i>
-        <i class="iconfont icon-location"></i>
-        <i class="iconfont icon-roundcheck"></i>
-        <i class="iconfont icon-roundclosefill"></i>
-        <i class="iconfont icon-roundclose"></i>
-        <i class="iconfont icon-roundrightfill"></i>
-        <i class="iconfont icon-roundright"></i>
-        <i class="iconfont icon-search"></i>
-        <i class="iconfont icon-likefill"></i>
-        <i class="iconfont icon-like"></i>
-        <i class="iconfont icon-top"></i>
-        <i class="iconfont icon-moreandroid"></i>
-        <i class="iconfont icon-home"></i>
-        <i class="iconfont icon-deletefill"></i>
-        <i class="iconfont icon-homefill"></i>
-        <i class="iconfont icon-share"></i>
-        <i class="iconfont icon-radiobox"></i>
-        <i class="iconfont icon-radioboxfill"></i>
-        <i class="iconfont icon-full"></i>
-      </div>
-      <div class="test-item">
-        <h2>进度条</h2>
-        <div class="my-process"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title></title>
+  <style>
+    .test-container {
+      max-width: 90%;
+      width: 900px;
+      margin: 10px auto;
+    }
+
+    .test-container .title {
+      padding-bottom: 20px;
+      text-align: center;
+    }
+
+    .test-container h1,
+    .test-container h2 {
+      line-height: 2;
+    }
+
+    .test-container .test-item {
+      border-radius: 5px;
+      margin: 20px 0;
+      padding: 10px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.08);
+    }
+
+    .test-container .test-item:hover {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .test-container .ball {
+      height: 30px;
+      width: 30px;
+      background: #ccc;
+      border-radius: 50%;
+      margin: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="test-container">
+    <div class="title">
+      <h1>kuan-css</h1>
+      <p>个人常用css</p>
+    </div>
+    <div class="test-item">
+      <h2>按钮</h2>
+      <button class="k-button">按钮</button>
+      <button class="k-button primary">按钮</button>
+      <button class="k-button danger">按钮</button>
+    </div>
+    <div class="test-item">
+      <h2>input</h2>
+      <input type="text" class="k-input" placeholder="请输入内容" />
+    </div>
+    <div class="test-item">
+      <h2>动画</h2>
+      <div class="flex wrap">
+        <div class="ball animated fadeIn"></div>
+        <div class="ball animated fadeInDown"></div>
+        <div class="ball animated fadeInUp"></div>
+        <div class="ball animated bounce"></div>
+        <div class="ball animated pulse infinite"></div>
       </div>
     </div>
+    <div class="test-item">
+      <h2>常用图标</h2>
+      <i class="iconfont icon-right"></i>
+      <i class="iconfont icon-back"></i>
+      <i class="iconfont icon-back_light"></i>
+      <i class="iconfont icon-add"></i>
+      <i class="iconfont icon-move"></i>
+      <i class="iconfont icon-filter"></i>
+      <i class="iconfont icon-double-arrow-right"></i>
+      <i class="iconfont icon-double-arrow-left"></i>
+      <i class="iconfont icon-appreciate"></i>
+      <i class="iconfont icon-appreciatefill"></i>
+      <i class="iconfont icon-check"></i>
+      <i class="iconfont icon-close"></i>
+      <i class="iconfont icon-edit"></i>
+      <i class="iconfont icon-emoji"></i>
+      <i class="iconfont icon-favorfill"></i>
+      <i class="iconfont icon-favor"></i>
+      <i class="iconfont icon-locationfill"></i>
+      <i class="iconfont icon-location"></i>
+      <i class="iconfont icon-roundcheck"></i>
+      <i class="iconfont icon-roundclosefill"></i>
+      <i class="iconfont icon-roundclose"></i>
+      <i class="iconfont icon-roundrightfill"></i>
+      <i class="iconfont icon-roundright"></i>
+      <i class="iconfont icon-search"></i>
+      <i class="iconfont icon-likefill"></i>
+      <i class="iconfont icon-like"></i>
+      <i class="iconfont icon-top"></i>
+      <i class="iconfont icon-moreandroid"></i>
+      <i class="iconfont icon-home"></i>
+      <i class="iconfont icon-deletefill"></i>
+      <i class="iconfont icon-homefill"></i>
+      <i class="iconfont icon-share"></i>
+      <i class="iconfont icon-radiobox"></i>
+      <i class="iconfont icon-radioboxfill"></i>
+      <i class="iconfont icon-full"></i>
+    </div>
+    <div class="test-item">
+      <h2>进度条</h2>
+      <div class="my-process"></div>
+    </div>
+  </div>
 
-    <script src="./test.js"></script>
-  </body>
+  <script src="./test.js"></script>
+</body>
+
 </html>
