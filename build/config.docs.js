@@ -3,6 +3,7 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const webpackMerge = require('webpack-merge')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 const options = require('./defaults')
 const { html: htmlPath } = options
@@ -24,12 +25,12 @@ module.exports = webpackMerge(config, {
     new CopyWebpackPlugin(
       fs.existsSync(options.staticPath)
         ? [
-            {
-              from: options.staticPath,
-              to: '',
-              ignore: ['.*']
-            }
-          ]
+          {
+            from: options.staticPath,
+            to: '',
+            ignore: ['.*']
+          }
+        ]
         : []
     )
   ],
