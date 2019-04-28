@@ -80,7 +80,6 @@
       opacity: 0;
       pointer-events: none;
       transition: all .18s ease-out .18s;
-
       #{nth($conf, 1)}: 50%;
       #{nth($conf, 3)}: 100%;
       transform: nth($conf, 4);
@@ -90,7 +89,6 @@
   }
   &:before {
       content: " ";
-
       margin-#{nth($conf, 3)}: 5px;
       @include svg-triangle($trangle-width, $trangle-height, $bg, $direction);
   }
@@ -103,16 +101,14 @@
       font-size: $font;
       padding: .5em 1em;
       white-space: nowrap;
-
       margin-#{nth($conf, 3)}: 5px + $trangle-height;
   }
   &:hover {
       &:after,
       &:before {
-          opacity: 1;
-          pointer-events: auto;
-
-          transform: nth($conf, 2);
+        opacity: 1;
+        pointer-events: auto;
+        transform: nth($conf, 2);
       }
   }
 }

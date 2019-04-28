@@ -1,0 +1,12 @@
+@import './fade.scss';
+@import './bounce.scss';
+@import './pulse.scss';
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  &.infinite {
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+  }
+}

@@ -1,15 +1,11 @@
-@import './iconfont.scss';
+@import './utils'; 
 
-@import './variable.scss';
-@import './mixins.scss';
-@import './functions.scss';
+@import './iconfont.scss';
 
 @import './reset.scss';
 
-@import './loading/index.scss';
+@import './helper';
 
-@import './class.scss';
-@import './flex.scss';
-@import './animate.scss';
+@import './k';
 
-@import './k/index';
+@import './animate';
