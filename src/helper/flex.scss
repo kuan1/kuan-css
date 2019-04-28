@@ -2,22 +2,26 @@
 .flex {
   display: flex;
 }
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
 .flex1 {
   flex: 1;
 }
-.column-flex {
+.flex-column, .column-flex {
   display: flex;
   flex-direction: column;
 }
-.between-flex {
+.flex-between, .between-flex {
   display: flex;
   justify-content: space-between;
 }
-.middle-flex {
+.flex-middle, .middle-flex {
   display: flex;
   align-items: center;
 }
-.center-flex {
+.flex-center, .center-flex {
   display: flex;
   align-items: center;
   justify-content: center;

@@ -1,2 +1,31 @@
-@import './class.scss';
+@import './center.scss';
+@import './ellipsis.scss';
 @import './flex.scss';
+@import './float.scss';
+@import './triangle.scss';
+
+.full {
+  width: 100%;
+  height: 100%;
+}
+.clearfix:after {
+  content: '';
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+  overflow: hidden;
+}
+.pointer {
+  cursor: pointer;
+}
+.cover {
+  background-size: cover;
+  background-position: center center;
+  &>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+}
