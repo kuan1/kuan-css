@@ -28,18 +28,9 @@
   -webkit-box-orient: vertical;
 }
 .arrow-box {
-  display: flex;
-  align-items: center;
-  &::after {
-    content: '';
-    display: block;
-    border-top: 1px solid #95949d;
-    border-right: 2px solid #95949d;
-    width: 7px;
-    height: 7px;
-    margin-left: 2px;
-    transform: rotate(45deg);
-  }
+  @include arrow(10px, 2px, right, #ccc, white, relative);
+  height: 20px;
+  margin-left: 5px;
 }
 
 .cover {
