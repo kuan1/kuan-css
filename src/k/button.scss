@@ -1,5 +1,5 @@
 // button
-.k-button {
+.k-btn {
   appearance: none;
   border-radius: 4px;
   border: none;
@@ -13,8 +13,9 @@
   text-align: center;
   padding: 0 10px;
   margin: 5px;
-  border: 1px solid #eee;
+  border: 1px solid $color-border;
   cursor: pointer;
+  background: white;
   &::after {
     content: '';
     opacity: 0;
@@ -26,17 +27,29 @@
     bottom: 0;
     right: 0;
   }
+  &:hover:not(:active)::after {
+    opacity: 0.05;
+  }
   &:active::after {
     opacity: 0.2;
   }
-  &.primary {
-    border: none;
+  &.k-btn-primary {
+    border-color: $color-primary;
     color: #fff;
-    background-color: #26a2ff;
+    background-color: $color-primary;
   }
-  &.danger {
-    border: none;
+  &.k-btn-danger {
+    color: $color-danger;
+    transition: all .3s;
+    &:hover {
+      background-color: $color-danger;
+      border-color: $color-danger;
+      color: white;
+    }
+  }
+  &.k-btn-success {
+    border-color: #fff;
     color: #fff;
-    background-color: #ef4f4f;
+    background-color: $color-success;
   }
 }
