@@ -14,7 +14,7 @@ const config = require('./config.base')
 module.exports = webpackMerge(config, {
   mode: 'production',
   output: {
-    path: `${__dirname}/../docs`,
+    path: `${__dirname}/../dist`,
     publicPath: '.'
   },
   plugins: [
