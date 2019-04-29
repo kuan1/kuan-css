@@ -1,5 +1,7 @@
 @import './triangle.scss';
+@import './one-px.scss';
 @import './balloon.scss';
+@import './center.scss';
 
 // 快速画圆
 @mixin balls($ball-size: 15px, $margin: 2px) {

@@ -1,0 +1,12 @@
+.one-px-bottom {
+  @include one-px(bottom);
+}
+.one-px-top {
+  @include one-px(top);
+}
+.one-px-right {
+  @include one-px(right);
+}
+.one-px-left {
+  @include one-px(left);
+}

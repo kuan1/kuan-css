@@ -1,11 +1,13 @@
-@import './utils'; 
+@import './utils'; // mixins
+@import './iconfont.scss'; // iconfont
+@import './reset.scss'; // reset
+@import './helper'; // general
+@import './k'; // components
+@import './animate'; // animated
 
-@import './iconfont.scss';
-
-@import './reset.scss';
-
-@import './helper';
-
-@import './k';
-
-@import './animate';
+.k-test {
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  @include one-px(left);
+}
