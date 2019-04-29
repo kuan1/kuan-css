@@ -1,0 +1,11 @@
+@import './triangle.scss';
+@import './balloon.scss';
+
+// 快速画圆
+@mixin balls($ball-size: 15px, $margin: 2px) {
+  background-color: $color-primary;
+  width: $ball-size;
+  height: $ball-size;
+  border-radius: 100%;
+  margin: $margin;
+}
