@@ -1,4 +1,4 @@
-function copy(text) {
+export default function copy(text) {
   const el = document.createElement('textarea')
 
   el.value = text

@@ -1,47 +1,28 @@
 <template>
   <div class="test-item">
     <h2>常用图标</h2>
-    <i class="iconfont icon-right"></i>
-    <i class="iconfont icon-back"></i>
-    <i class="iconfont icon-back_light"></i>
-    <i class="iconfont icon-add"></i>
-    <i class="iconfont icon-move"></i>
-    <i class="iconfont icon-filter"></i>
-    <i class="iconfont icon-double-arrow-right"></i>
-    <i class="iconfont icon-double-arrow-left"></i>
-    <i class="iconfont icon-appreciate"></i>
-    <i class="iconfont icon-appreciatefill"></i>
-    <i class="iconfont icon-check"></i>
-    <i class="iconfont icon-close"></i>
-    <i class="iconfont icon-edit"></i>
-    <i class="iconfont icon-emoji"></i>
-    <i class="iconfont icon-favorfill"></i>
-    <i class="iconfont icon-favor"></i>
-    <i class="iconfont icon-locationfill"></i>
-    <i class="iconfont icon-location"></i>
-    <i class="iconfont icon-roundcheck"></i>
-    <i class="iconfont icon-roundclosefill"></i>
-    <i class="iconfont icon-roundclose"></i>
-    <i class="iconfont icon-roundrightfill"></i>
-    <i class="iconfont icon-roundright"></i>
-    <i class="iconfont icon-search"></i>
-    <i class="iconfont icon-likefill"></i>
-    <i class="iconfont icon-like"></i>
-    <i class="iconfont icon-top"></i>
-    <i class="iconfont icon-moreandroid"></i>
-    <i class="iconfont icon-home"></i>
-    <i class="iconfont icon-deletefill"></i>
-    <i class="iconfont icon-homefill"></i>
-    <i class="iconfont icon-share"></i>
-    <i class="iconfont icon-radiobox"></i>
-    <i class="iconfont icon-radioboxfill"></i>
-    <i class="iconfont icon-full"></i>
+    <i v-for="item in names" @click="copy(item)" :key="item" class="iconfont" :class="item"></i>
   </div>
 </template>
 
 <script>
+import copy from '@/utils/copy'
 export default {
-
+  data() {
+    return {
+      names: [
+        'icon-right',
+        'icon-back', 'icon-back_light', 'icon-add', 'icon-move', 'icon-filter', 'icon-double-arrow-right', 'icon-double-arrow-left', 'icon-appreciate', 'icon-appreciatefill', 'icon-check', 'icon-close', 'icon-edit', 'icon-emoji', 'icon-favorfill', 'icon-favor', 'icon-locationfill', 'icon-location', 'icon-roundcheck', 'icon-roundclosefill', 'icon-roundclose', 'icon-roundrightfill', 'icon-roundright', 'icon-search', 'icon-likefill', 'icon-like', 'icon-top', 'icon-moreandroid', 'icon-home', 'icon-deletefill', 'icon-homefill', 'icon-share', 'icon-radiobox', 'icon-radioboxfill', 'icon-full'
+      ]
+    }
+  },
+  methods: {
+    copy(item) {
+      const name = `iconfont ${item}`
+      copy(name)
+      alert(`${name}复制成功`)
+    }
+  }
 }
 </script>
 

@@ -1,7 +1,7 @@
 <template>
   <div class="test-item">
     <h2>loading</h2>
-    <div class="loading-container">
+    <div class="loading-container flex-wrap">
       <div class="k-pacman">
         <div></div>
         <div></div>
