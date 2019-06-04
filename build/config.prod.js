@@ -3,7 +3,6 @@ const webpackMerge = require('webpack-merge')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 
 const config = require('./config.base')
-// const { resolve } = require('./utils')
 
 module.exports = webpackMerge(config, {
   mode: 'production',

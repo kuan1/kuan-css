@@ -5,7 +5,7 @@ module.exports = {
   proxy: {}, // 代理地址
   // 打包入口 默认： src/index.js
   entry: {
-    index: resolve('src')
+    index: resolve('src/styles')
   },
   publicPath: '', // cdn路径 默认：空
   staticPath: resolve('public'), // 静态资源目录 public
