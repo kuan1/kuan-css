@@ -47,5 +47,8 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+.iconfont {
+  margin-right: 2px;
+}
 </style>

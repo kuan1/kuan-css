@@ -49,9 +49,4 @@ export default {
   height: 50px;
   @include one-px(top, red);
 }
-.balloon {
-  display: inline-block;
-  cursor: pointer;
-  @include balloon(right);
-}
 </style>
