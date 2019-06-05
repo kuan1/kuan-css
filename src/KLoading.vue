@@ -35,4 +35,12 @@ export default {
 </script>
 
 <style>
+.loading-container {
+  display: flex;
+  align-items: center;
+}
+
+.loading-container > div {
+  margin: 0 30px;
+}
 </style>

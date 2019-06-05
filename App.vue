@@ -7,6 +7,14 @@
     <k-loading></k-loading>
     <k-process></k-process>
     <k-animate></k-animate>
+    <div class="test-item">
+      <h2>一像素</h2>
+      <div class="one-px"></div>
+    </div>
+    <div class="test-item">
+      <h2>气泡</h2>
+      <div data-balloon="划过后出现气泡" class="balloon">划过</div>
+    </div>
   </div>
 </template>
 
@@ -34,48 +42,11 @@ export default {
 
 <style lang="scss">
 @import "./src/styles/index.scss";
-.test-container {
-  max-width: 90%;
-  width: 900px;
-  margin: 10px auto;
-}
-
-.test-container .title {
-  padding-bottom: 20px;
-  text-align: center;
-}
-
-.test-container h1,
-.test-container h2 {
-  line-height: 2;
-}
-
-.test-container .test-item {
-  border-radius: 5px;
-  margin: 20px 0;
-  padding: 10px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.08);
-  word-break: break-all;
-}
-
-.test-container .test-item:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.test-container .ball {
+.one-px {
   height: 50px;
-  width: 50px;
-  background: #ccc;
-  border-radius: 50%;
-  margin: 20px;
+  @include one-px(top, red);
 }
-
-.loading-container {
-  display: flex;
-  align-items: center;
-}
-
-.loading-container > div {
-  margin: 0 30px;
+.balloon {
+  @include balloon(left);
 }
 </style>

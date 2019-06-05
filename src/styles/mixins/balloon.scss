@@ -2,15 +2,14 @@
  * @desc  气泡提示: http://kazzkiq.github.io/balloon.css/
  * @param $direction:            top bottom left right
  * @param $bg                    气泡提示背景颜色
- * @param $trangle-width         气泡小三角形宽度
  * @param $trangle-height        气泡小三角形高度
  * @param $color                 气泡文字颜色
  * @param $font                  气泡文字大小
  */
 @mixin balloon(
-  $direction,
-  $bg,
-  $trangle-width: 18px,
+  $direction: top,
+  $bg: rgba(0, 0, 0, 0.7),
+  // $trangle-width: 18px,
   $trangle-height: 6px,
   $color: #fff,
   $font: 12px
@@ -44,7 +43,7 @@
   &:before {
     content: ' ';
     margin-#{nth($conf, 3)}: 5px;
-    @include svg-triangle($trangle-width, $trangle-height, $bg, $direction);
+    // @include svg-triangle($trangle-width, $trangle-height, $bg, $direction);
   }
 
   &:after {

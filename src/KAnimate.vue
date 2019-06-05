@@ -18,4 +18,11 @@ export default {
 </script>
 
 <style>
+.test-container .ball {
+  height: 50px;
+  width: 50px;
+  background: #ccc;
+  border-radius: 50%;
+  margin: 20px;
+}
 </style>

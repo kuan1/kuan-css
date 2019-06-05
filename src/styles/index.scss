@@ -5,10 +5,3 @@
 @import './helper/index.scss'; // general
 @import './k/index.scss'; // components
 @import './animate/index.scss'; // animated
-
-.k-test {
-  width: 80%;
-  margin: 20px auto;
-  padding: 20px;
-  @include one-px(left);
-}
