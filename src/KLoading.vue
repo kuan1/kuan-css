@@ -1,6 +1,6 @@
 <template>
   <div class="test-item">
-    <h2>loading</h2>
+    <h2>加载中</h2>
     <div class="loading-container flex-wrap">
       <div class="k-pacman">
         <div></div>
