@@ -1,4 +1,6 @@
-@import './utils/index.scss'; // mixins
+@import './variable.scss';
+@import './functions.scss';
+@import './mixins/index.scss';
 @import './base/index.scss'; // base
 @import './helper/index.scss'; // general
 @import './k/index.scss'; // components
