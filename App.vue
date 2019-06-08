@@ -13,15 +13,15 @@
 </template>
 
 <script>
-import KIcon from './src/KIcon'
-import KButton from './src/KButton'
-import KInput from './src/Kinput'
-import KLoading from './src/KLoading'
-import KProcess from './src/KProcess'
-import KAnimate from './src/KAnimate'
-import KTriangle from './src/KTriangle'
-import KBalloon from './src/KBalloon'
-import KOnePx from './src/KOnePx'
+import KIcon from './test/KIcon'
+import KButton from './test/KButton'
+import KInput from './test/Kinput'
+import KLoading from './test/KLoading'
+import KProcess from './test/KProcess'
+import KAnimate from './test/KAnimate'
+import KTriangle from './test/KTriangle'
+import KBalloon from './test/KBalloon'
+import KOnePx from './test/KOnePx'
 
 export default {
   components: {
@@ -39,5 +39,5 @@ export default {
 </script>
 
 <style lang="scss">
-@import './src/styles/index.scss';
+@import "./src/index.scss";
 </style>

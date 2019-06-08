@@ -23,7 +23,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import './styles/mixins/triangle.scss';
+@import "../src/mixins/triangle.scss";
 .triangle {
   display: flex;
   align-items: center;

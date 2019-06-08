@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import copy from '@/utils/copy'
+import copy from './utils/copy'
 export default {
   data() {
     return {
