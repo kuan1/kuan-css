@@ -1,4 +1,5 @@
 /**
+ * 部分修改来自github代码
  * @desc  气泡提示: http://kazzkiq.github.io/balloon.css/
  * @param $direction:            top bottom left right
  * @param $bg                    气泡提示背景颜色
@@ -9,22 +10,20 @@
 @mixin balloon(
   $direction: top,
   $bg: rgba(0, 0, 0, 0.7),
-  // $trangle-width: 18px,
   $trangle-height: 6px,
   $color: #fff,
-  $font: 12px
+  $font: 14px
 ) {
   $map-direction: (
-    top: left translate(-50%, 0) bottom translate(-50%, 10px),
-    bottom: left translate(-50%, 0) top translate(-50%, -10px),
-    left: top translate(0, -50%) right translate(10px, -50%),
-    right: top translate(0, -50%) left translate(-10px, -50%)
+    top: left translate(-50%, 0) bottom translate(-50%, 3px) right,
+    bottom: left translate(-50%, 0) top translate(-50%, -3px) right,
+    left: top translate(0, -50%) right translate(3px, -50%) bottom,
+    right: top translate(0, -50%) left translate(-3px, -50%) bottom
   );
   @if not map-has-key($map-direction, $direction) {
     @error "balloon $direction 必须为：#{map-keys($map-direction)}";
   }
   $conf: map-get($map-direction, $direction);
-
   position: relative;
   &:before,
   &:after {
@@ -41,9 +40,11 @@
     }
   }
   &:before {
-    content: ' ';
+    content: '';
     margin-#{nth($conf, 3)}: 5px;
-    // @include svg-triangle($trangle-width, $trangle-height, $bg, $direction);
+    border-#{$direction}: $trangle-height solid $bg;
+    border-#{nth($conf, 1)}: #{$trangle-height} solid transparent;
+    border-#{nth($conf, 5)}: #{$trangle-height} solid transparent;
   }
 
   &:after {
@@ -52,7 +53,7 @@
     border-radius: 4px;
     color: $color;
     font-size: $font;
-    padding: 0.5em 1em;
+    padding: 0.6em 0.8em;
     white-space: nowrap;
     margin-#{nth($conf, 3)}: 5px + $trangle-height;
   }

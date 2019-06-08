@@ -1,13 +1,10 @@
 @import './center.scss';
 @import './ellipsis.scss';
 @import './flex.scss';
-@import './float.scss';
 @import './triangle.scss';
+@import './balloon.scss';
+@import './one-px.scss';
 
-.full {
-  width: 100%;
-  height: 100%;
-}
 .clearfix:after {
   content: '';
   display: block;
@@ -16,13 +13,23 @@
   visibility: hidden;
   overflow: hidden;
 }
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.full {
+  width: 100%;
+  height: 100%;
+}
 .pointer {
   cursor: pointer;
 }
 .cover {
   background-size: cover;
   background-position: center center;
-  &>img {
+  & > img {
     width: 100%;
     height: 100%;
     object-fit: cover;

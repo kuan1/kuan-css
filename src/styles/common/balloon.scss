@@ -1,0 +1,20 @@
+.balloon-right {
+  display: inline-block;
+  cursor: pointer;
+  @include balloon(right);
+}
+.balloon-left {
+  display: inline-block;
+  cursor: pointer;
+  @include balloon(left);
+}
+.balloon-top {
+  display: inline-block;
+  cursor: pointer;
+  @include balloon(top);
+}
+.balloon-bottom {
+  display: inline-block;
+  cursor: pointer;
+  @include balloon(bottom);
+}

@@ -11,8 +11,29 @@ export default {
   data() {
     return {
       names: [
-        'icon-right',
-        'icon-back', 'icon-back_light', 'icon-add', 'icon-move', 'icon-filter', 'icon-double-arrow-right', 'icon-double-arrow-left', 'icon-appreciate', 'icon-appreciatefill', 'icon-check', 'icon-close', 'icon-edit', 'icon-emoji', 'icon-favorfill', 'icon-favor', 'icon-locationfill', 'icon-location', 'icon-roundcheck', 'icon-roundclosefill', 'icon-roundclose', 'icon-roundrightfill', 'icon-roundright', 'icon-search', 'icon-likefill', 'icon-like', 'icon-top', 'icon-moreandroid', 'icon-home', 'icon-deletefill', 'icon-homefill', 'icon-share', 'icon-radiobox', 'icon-radioboxfill', 'icon-full'
+        'icon-search',
+        'icon-check',
+        'icon-close',
+        'icon-add',
+        'icon-move',
+        'icon-edit',
+        'icon-share',
+        'icon-like',
+        'icon-likefill',
+        'icon-delete',
+        'icon-deletefill',
+        'icon-filter',
+        'icon-roundcheck',
+        'icon-roundcheckfill',
+        'icon-appreciate',
+        'icon-appreciatefill',
+        'icon-emoji',
+        'icon-double-arrow-left',
+        'icon-arrow-left',
+        'icon-arrow-right',
+        'icon-double-arrow-right',
+        'icon-arrow-top',
+        'icon-arrow-bottom'
       ]
     }
   },
@@ -26,5 +47,8 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+.iconfont {
+  margin-right: 2px;
+}
 </style>

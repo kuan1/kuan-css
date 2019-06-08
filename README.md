@@ -4,4 +4,16 @@
 
 个人常用 css
 
+# 安装
+
+```bash
+npm install kuan-css -S
+```
+
+# 使用
+
+```css
+import 'kuan-css';
+```
+
 lading 样式来自 [loaders.css](https://github.com/ConnorAtherton/loaders.css)
