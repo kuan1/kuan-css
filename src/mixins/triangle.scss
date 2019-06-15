@@ -13,8 +13,6 @@
   align-items: center;
   &:after {
     content: '';
-  }
-  &:after {
     border-#{nth($conf, 1)}: $width solid $color;
     border-#{nth($conf, 2)}: #{$width / 1.414} solid transparent;
     border-#{nth($conf, 3)}: #{$width / 1.414} solid transparent;
