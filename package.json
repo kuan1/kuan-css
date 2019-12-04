@@ -1,6 +1,6 @@
 {
   "name": "kuan-css",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "重置样式，常用css，常用animate.css",
   "main": "index.css",
   "scripts": {
@@ -11,6 +11,9 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kuan1/kuan-css.git"
+  },
+  "gitHooks": {
+    "commit-msg": "node verifyCommitMsg.js"
   },
   "keywords": [
     "css"
@@ -29,12 +32,14 @@
   "dependencies": {},
   "devDependencies": {
     "autoprefixer": "^9.7.3",
+    "chalk": "^3.0.0",
     "gulp": "^4.0.2",
     "gulp-clean-css": "^4.2.0",
     "gulp-less": "^4.0.1",
     "gulp-postcss": "^8.0.0",
     "gulp-rename": "^1.4.0",
-    "less-loader": "^5.0.0"
+    "less-loader": "^5.0.0",
+    "yorkie": "^2.0.0"
   },
   "browserslist": [
     "> 1%",
