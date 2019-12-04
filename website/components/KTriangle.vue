@@ -17,13 +17,11 @@
 </template>
 
 <script>
-export default {
-
-}
+export default {};
 </script>
 
-<style lang="scss" scoped>
-@import "../src/mixins/triangle.scss";
+<style lang="less" scoped>
+@import "../src/mixins/triangle.less";
 .triangle {
   display: flex;
   align-items: center;
