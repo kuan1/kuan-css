@@ -1,8 +1,8 @@
-# kuan-css 整理常用 css 方便引入
+# kuan-css 整理常用 css（less、scss）
 
 [kuan-css](https://kuan1.github.io/kuan-css)
 
-个人常用 css
+> 使用 scss 和 less 实现同样的一些 mixins
 
 # 安装
 

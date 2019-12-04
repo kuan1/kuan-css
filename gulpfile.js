@@ -12,7 +12,7 @@ function styles() {
     .pipe(less())
     .pipe(postcss([require("autoprefixer")]))
     .pipe(cleanCSS())
-    .pipe(rename("kuan-css.css"))
+    .pipe(rename("index.css"))
     .pipe(gulp.dest("./"));
 }
 

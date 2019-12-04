@@ -1,10 +1,14 @@
 @import "./center.less";
-@import "./ellipsis.less";
 @import "./flex.less";
 @import "./one-px.less";
-// @import "./triangle.less";
-// @import "./balloon.less";
+@import "./triangle.less";
+@import "./balloon.less";
 
+// 超出隐藏
+.ellipsis {
+  .ellipsis(1);
+}
+// 清除浮动
 .clearfix:after {
   content: "";
   display: block;

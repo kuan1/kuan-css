@@ -21,7 +21,7 @@ export default {};
 </script>
 
 <style lang="less" scoped>
-@import "../src/mixins/triangle.less";
+@import "../../less/mixins/index.less";
 .triangle {
   display: flex;
   align-items: center;

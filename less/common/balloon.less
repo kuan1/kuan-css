@@ -1,20 +1,22 @@
+@import "../mixins/index.less";
+
 .balloon-right {
   display: inline-block;
   cursor: pointer;
-  @include balloon(right);
+  .balloon(right);
 }
 .balloon-left {
   display: inline-block;
   cursor: pointer;
-  @include balloon(left);
+  .balloon(left);
 }
 .balloon-top {
   display: inline-block;
   cursor: pointer;
-  @include balloon(top);
+  .balloon(top);
 }
 .balloon-bottom {
   display: inline-block;
   cursor: pointer;
-  @include balloon(bottom);
+  .balloon(bottom);
 }
