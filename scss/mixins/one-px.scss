@@ -1,10 +1,10 @@
 /**
   * 750设计稿情况下1px在手机上展示0.5
   */
-@mixin one-px($direction: bottom, $color: $color-border) {
+@mixin one-px($direction: bottom, $color: #eee) {
   position: relative;
   &::after {
-    content: '';
+    content: "";
     display: block;
     background-color: $color;
     transform: scaleY(0.5);
