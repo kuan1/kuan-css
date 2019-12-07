@@ -1,8 +1,9 @@
 // 文字溢出省略
-.ellipsis(@lines) {
+.ellipsis(@lines: 1, @width: 100%) {
   overflow: hidden;
   text-overflow: ellipsis;
   & when (@lines = 1) {
+    width: @width;
     white-space: nowrap;
   }
   & when (@lines > 1) {
