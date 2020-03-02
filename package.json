@@ -21,7 +21,8 @@
   "files": [
     "less",
     "scss",
-    "kuan-css.css"
+    "postcss.config.json",
+    "index.css"
   ],
   "author": "luzhongk@126.com",
   "license": "ISC",
