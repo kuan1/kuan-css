@@ -1,15 +1,15 @@
-const chalk = require("chalk"); // eslint-disable-line
-const msgPath = process.env.GIT_PARAMS;
-const msg = require("fs")
-  .readFileSync(msgPath, "utf-8")
-  .trim();
+const chalk = require('chalk') // eslint-disable-line
+const msgPath = process.env.GIT_PARAMS
+const msg = require('fs')
+  .readFileSync(msgPath, 'utf-8')
+  .trim()
 
-const commitRE = /^(v(ersion)?\d+\.\d+\.\d+(-(alpha|beta|rc.\d+))?)|((revert: )?(feat|fix|docs|style|refactor|perf|test|workflow|ci|chore|types)(\(.+\))?!?: .{1,50})/;
+const commitRE = /^((v)?(version)?\d+\.\d+\.\d+(-(alpha|beta|rc.\d+))?)|((revert: )?(feat|fix|docs|style|refactor|perf|test|workflow|ci|chore|types)(\(.+\))?!?: .{1,50})/
 
 if (!commitRE.test(msg)) {
-  console.log();
+  console.log()
   console.error(
-    `  ${chalk.bgRed.white(" ERROR ")} ${chalk.red(
+    `  ${chalk.bgRed.white(' ERROR ')} ${chalk.red(
       `invalid commit message format.`
     )}\n\n` +
       chalk.red(
@@ -25,6 +25,6 @@ if (!commitRE.test(msg)) {
           `npm run commit`
         )} to interactively generate a commit message.\n`
       )
-  );
-  process.exit(1);
+  )
+  process.exit(1)
 }
