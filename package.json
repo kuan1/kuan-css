@@ -21,7 +21,7 @@
   "files": [
     "less",
     "scss",
-    "postcss.config.json",
+    "postcss.config.js",
     "index.css"
   ],
   "author": "luzhongk@126.com",
