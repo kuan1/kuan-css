@@ -1,0 +1,67 @@
+.button-variant(@color; @background; @border) {
+  color: @color;
+  background-color: @background;
+  border-color: @border;
+  &:hover {
+    color: @color;
+    background-color: darken(@background, 10%);
+    border-color: darken(@border, 2%);
+  }
+  &:focus,
+  &.focus {
+    color: @color;
+    background-color: darken(@background, 10%);
+    border-color: darken(@border, 5%);
+    box-shadow: 0 0 0 0.15em lighten(@background, 10%);
+  }
+  &:active,
+  &.active {
+    color: @color;
+    background-color: darken(@background, 10%);
+    background-image: none;
+    border-color: darken(@border, 3%);
+  }
+  &.disabled,
+  &[disabled] {
+    &:hover,
+    &:focus,
+    &.focus {
+      background-color: @background;
+      border-color: @border;
+    }
+  }
+}
+
+.button-outline-variant(@color; @background; @border) {
+  color: @background;
+  background-color: @white;
+  border-color: @border;
+  &:hover {
+    color: @color;
+    background-color: darken(@background, 10%);
+    border-color: darken(@border, 2%);
+  }
+  &:focus,
+  &.focus {
+    color: @color;
+    background-color: darken(@background, 10%);
+    border-color: darken(@border, 5%);
+    box-shadow: 0 0 0 0.15em lighten(@background, 10%);
+  }
+  &:active,
+  &.active {
+    color: @color;
+    background-color: darken(@background, 10%);
+    background-image: none;
+    border-color: darken(@border, 3%);
+  }
+  &.disabled,
+  &[disabled] {
+    &:hover,
+    &:focus,
+    &.focus {
+      background-color: @background;
+      border-color: @border;
+    }
+  }
+}
