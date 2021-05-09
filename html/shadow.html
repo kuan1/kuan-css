@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>kuan-css</title>
+  <link rel="stylesheet" href="./index.css">
+  <style>
+    .container {
+      max-width: 800px;
+      margin: 10px auto;
+      padding: 20px;
+      display: grid;
+      justify-content: center;
+      gap: 20px;
+      grid-template-columns: repeat(auto-fill, 120px);
+      background-color: #eef2ff;
+    }
+
+    .back {
+      padding: 10px;
+      position: fixed;
+      left: 0;
+      top: 0;
+      cursor: pointer;
+    }
+
+    .card {
+      width: 120px;
+      height: 120px;
+      background-color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+  <h2 class="text-center p-md mt-md">阴影shadow</h2>
+  <a href="index.html">
+    <div class="back hover:color-primary">首页</div>
+  </a>
+  <div class="container">
+    <div class="card flex-center shadow-sm">shadow-sm</div>
+    <div class="card flex-center shadow">shadow</div>
+    <div class="card flex-center shadow-md">shadow-md</div>
+    <div class="card flex-center shadow-lg">shadow-lg</div>
+  </div>
+  <div class="container">
+    <div class="card flex-center hover:shadow-sm">hover:shadow-sm</div>
+    <div class="card flex-center hover:shadow">hover:shadow</div>
+    <div class="card flex-center hover:shadow-md">hover:shadow-md</div>
+    <div class="card flex-center hover:shadow-lg">hover:shadow-lg</div>
+  </div>
+</body>
+
+</html>
