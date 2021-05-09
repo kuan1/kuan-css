@@ -9,25 +9,54 @@
   <link rel="stylesheet" href="./index.css">
   <style>
     .container {
-      width: 90%;
       max-width: 800px;
-      margin: 0 auto;
+      margin: 10px auto;
       padding: 20px;
+      background-color: #eef2ff;
       display: grid;
-      grid-template-columns: repeat(auto-fill, 120px);
-      text-align: center;
+      gap: 10px;
+      grid-template-columns: repeat(auto-fill, 130px);
+      justify-content: center;
+    }
+
+    a {
+      display: block;
+    }
+
+    .k-btn {
+      width: 100%;
+    }
+
+    .github {
+      width: 22px;
+      position: fixed;
+      left: 8px;
+      top: 8px;
+      cursor: pointer;
     }
   </style>
 </head>
 
 <body>
-  <h2 class="flex-center leading-loose">kuan-css</h2>
-  <div class="flex-center container">
+  <h2 class="flex-center p-md mt-md">kuan-css</h2>
+  <a href="https://github.com/kuan1/kuan-css/tree/dev">
+    <img src="./asset/github.png" class="github" />
+  </a>
+  <div class="container">
     <a href="iconfont.html">
       <button class="k-btn">字体图标</button>
     </a>
     <a href="btn.html">
       <button class="k-btn">按钮组件</button>
+    </a>
+    <a href="form.html">
+      <button class="k-btn">表单组件</button>
+    </a>
+    <a href="loading.html">
+      <button class="k-btn">加载loading</button>
+    </a>
+    <a href="animate.html">
+      <button class="k-btn">动画animation</button>
     </a>
     <a href="shadow.html">
       <button class="k-btn">阴影shadow</button>
