@@ -2,7 +2,7 @@
 
 [kuan-css](https://kuan1.github.io/kuan-css)
 
-> 使用 scss 和 less 实现同样功能的常用的 mixins，代码在scssandless分支
+> 使用 scss 和 less 实现同样功能的常用的 mixins，代码在 scssandless 分支
 
 # 安装
 
@@ -15,5 +15,3 @@ npm install kuan-css -S
 ```css
 import 'kuan-css';
 ```
-
-lading 样式来自 [loaders.css](https://github.com/ConnorAtherton/loaders.css)
