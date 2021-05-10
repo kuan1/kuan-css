@@ -2,7 +2,7 @@
 
 [kuan-css](https://kuan1.github.io/kuan-css)
 
-> 使用 scss 和 less 实现同样功能的一些 mixins
+> 使用 scss 和 less 实现同样功能的常用的 mixins，代码在scssandless分支
 
 # 安装
 
