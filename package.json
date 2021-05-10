@@ -20,8 +20,8 @@
   ],
   "files": [
     "less",
-    "postcss.config.js",
-    "index.css"
+    "dist",
+    "postcss.config.js"
   ],
   "author": "luzhongk@126.com",
   "license": "ISC",
