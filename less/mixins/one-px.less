@@ -1,13 +1,12 @@
 /**
   * 750设计稿情况下1px在手机上展示0.5
   */
-.one-px(@direction: bottom, @color: #eee) {
+.one-px(@direction: bottom, @color: #dbdbdb) {
   position: relative;
   &::after {
-    content: "";
+    content: '';
     display: block;
     background-color: @color;
-    transform: scaleY(0.5);
     @{direction}: 0;
     position: absolute;
     & when (@direction = top),  (@direction = bottom) {
