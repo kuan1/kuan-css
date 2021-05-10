@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>kuan-css</title>
+  <link rel="stylesheet" href="./index.css">
+  <style>
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .back {
+      padding: 10px;
+      position: fixed;
+      left: 0;
+      top: 0;
+      cursor: pointer;
+    }
+
+    .card {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, 200px);
+      gap: 15px;
+      background-color: #eef2ff;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+
+<body>
+  <h2 class="text-center p-md mt-md">按钮</h2>
+  <a href="index.html">
+    <div class="back hover:color-primary">首页</div>
+  </a>
+  <div class="container">
+    <div class="card shadow hover:shadow-md p-md hover:bg-danger">
+      <button class="k-btn">k-btn</button>
+      <button class="k-btn k-btn-primary">k-btn k-btn-primary</button>
+      <button class="k-btn k-btn-success">k-btn k-btn-success</button>
+      <button class="k-btn k-btn-secondary">k-btn k-btn-secondary</button>
+      <button class="k-btn k-btn-info">k-btn k-btn-info</button>
+      <button class="k-btn k-btn-warning">k-btn k-btn-warning</button>
+      <button class="k-btn k-btn-danger">k-btn k-btn-danger</button>
+      <button class="k-btn k-btn-primary" disabled>k-btn-primary disabled</button>
+    </div>
+    <div class="card shadow hover:shadow-md p-md mt-md hover:bg-danger">
+      <button class="k-btn">k-btn</button>
+      <button class="k-btn k-outline-btn-primary">k-outline-btn-primary</button>
+      <button class="k-btn k-outline-btn-success">k-outline-btn-success</button>
+      <button class="k-btn k-outline-btn-secondary">k-outline-btn-secondary</button>
+      <button class="k-btn k-outline-btn-info">k-outline-btn-info</button>
+      <button class="k-btn k-outline-btn-warning">k-outline-btn-warning</button>
+      <button class="k-btn k-outline-btn-danger">k-outline-btn-danger</button>
+      <button class="k-btn k-outline-btn-primary" disabled>disabled</button>
+    </div>
+  </div>
+</body>
+
+</html>

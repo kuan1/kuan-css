@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>kuan-css</title>
+  <link rel="stylesheet" href="./index.css">
+  <style>
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #eef2ff;
+      display: grid;
+      gap: 15px;
+      grid-template-columns: repeat(auto-fill, 80px);
+      justify-content: center;
+    }
+
+    .back {
+      padding: 10px;
+      position: fixed;
+      left: 0;
+      top: 0;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <h2 class="text-center p-md mt-md">字体图标</h2>
+  <a href="index.html">
+    <div class="back hover:color-primary">首页</div>
+  </a>
+  <div class="container">
+    <button class="k-btn balloon-top" data-balloon="iconmore">
+      <i class="iconfont iconmore"></i>
+    </button>
+    <button class="k-btn balloon-top" data-balloon="iconliulan">
+      <i class="iconfont iconliulan"></i>
+    </button>
+    <button class="k-btn balloon-top" data-balloon="iconcheck">
+      <i class="iconfont iconcheck"></i>
+    </button>
+    <button class="k-btn balloon-top" data-balloon="iconclose">
+      <i class="iconfont iconclose"></i>
+    </button>
+    <button class="k-btn balloon-top" data-balloon="iconadd">
+      <i class="iconfont iconadd"></i>
+    </button>
+    <button class="k-btn balloon-top" data-balloon="iconmove">
+      <i class="iconfont iconmove"></i>
+    </button>
+    <button class="k-btn balloon-top" data-balloon="iconright">
+      <i class="iconfont iconright"></i>
+    </button>
+    <button class="k-btn balloon-top" data-balloon="iconleft">
+      <i class="iconfont iconleft"></i>
+    </button>
+    <button class="k-btn balloon-top" data-balloon="icondoubleleft">
+      <i class="iconfont icondoubleleft"></i>
+    </button>
+    <button class="k-btn balloon-top" data-balloon="icondoubleright">
+      <i class="iconfont icondoubleright"></i>
+    </button>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@halobear/utils/copy.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@halobear/js-feedback"></script>
+  <script>
+    document.querySelectorAll('.k-btn').forEach(btn => {
+      btn.onclick = function () {
+        const text = this.dataset.balloon
+        haloCopy(text)
+        jsFeedback.toast(`${text}复制成功`)
+      }
+    })
+  </script>
+</body>
+
+</html>
